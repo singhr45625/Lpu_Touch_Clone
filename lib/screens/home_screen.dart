@@ -296,7 +296,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         colors: [Colors.orange, Colors.amber],
                       ).createShader(bounds);
                     },
-                    child: const Icon(Icons.menu, size: 30),
+                    child: const Icon(Icons.notes, size: 30),
                   ),
                   onPressed: () {
                     Scaffold.of(context).openDrawer(); // Opens the custom app drawer
