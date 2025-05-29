@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../screens/noti_screen.dart';
 
-class CartIcon extends StatelessWidget {
-  const CartIcon({super.key});
+class NotiIcon extends StatelessWidget {
+  const NotiIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
