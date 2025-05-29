@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lputouchclone/screens/noti_screen.dart'; // Assuming NotiScreen is still used
-import 'package:lputouchclone/shared/noti_icon.dart'; // Assuming NotiIcon is still used
+import 'package:lputouchclone/screens/noti_screen.dart';
+import 'package:lputouchclone/shared/noti_icon.dart';
 import 'package:lputouchclone/shared/app_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,27 +11,25 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // A list to hold the dynamically added tiles data.
-  // Each element is a Map containing the title and icon data for a tile.
+
   final List<Map<String, dynamic>> _addedTilesData = [];
 
-  // Define a list of available tiles that can be added to the dashboard.
-  final List<Map<String, dynamic>> _availableTiles = [
+    final List<Map<String, dynamic>> _availableTiles = [
     {'title': 'Academics', 'icon': Icons.school},
     {'title': 'Attendance', 'icon': Icons.calendar_today},
     {'title': 'Results', 'icon': Icons.grading},
-    {'title': 'Fee Statement', 'icon': Icons.currency_rupee}, // Changed to match image
+    {'title': 'Fee Statement', 'icon': Icons.currency_rupee},
     {'title': 'Library', 'icon': Icons.local_library},
     {'title': 'Hostel', 'icon': Icons.bed},
-    {'title': 'Announcements', 'icon': Icons.campaign}, // Matches "Announce" in image
+    {'title': 'Announcements', 'icon': Icons.campaign},
     {'title': 'Events', 'icon': Icons.event},
     {'title': 'Transport', 'icon': Icons.directions_bus},
     {'title': 'Placements', 'icon': Icons.work},
     {'title': 'Mentoring', 'icon': Icons.people_alt},
-    {'title': 'Assignment', 'icon': Icons.assignment}, // Added from image
-    {'title': 'Exams', 'icon': Icons.edit_note}, // Added from image
-    {'title': 'RMS Status', 'icon': Icons.calendar_month}, // Added from image
-    {'title': '10 to Thrive', 'icon': Icons.rocket_launch}, // Added from image
+    {'title': 'Assignment', 'icon': Icons.assignment},
+    {'title': 'Exams', 'icon': Icons.edit_note},
+    {'title': 'RMS Status', 'icon': Icons.calendar_month},
+    {'title': '10 to Thrive', 'icon': Icons.rocket_launch},
     {'title': 'Student Support', 'icon': Icons.support_agent},
     {'title': 'Feedback', 'icon': Icons.feedback},
     {'title': 'Health & Wellness', 'icon': Icons.health_and_safety},
@@ -43,8 +41,6 @@ class _HomeScreenState extends State<HomeScreen> {
     {'title': 'Lost & Found', 'icon': Icons.find_in_page},
   ];
 
-  // This is the callback function used for both the drawer and the plus icon.
-  // It's responsible for adding a new tile to the dashboard.
   void _addTileFromDrawer(String title, IconData icon) {
     if (!_addedTilesData.any((tile) => tile['title'] == title)) {
       setState(() {
