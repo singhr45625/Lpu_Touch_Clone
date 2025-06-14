@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lputouchclone/screens/noti_screen.dart'; // Assuming this is your NotificationScreen
+import 'package:lputouchclone/screens/noti_screen.dart';
 import 'package:lputouchclone/shared/noti_icon.dart';
 import 'package:lputouchclone/shared/app_drawer.dart';
 
@@ -718,7 +718,7 @@ class _DashboardContentState extends State<_DashboardContent> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Manage Dashboard Tiles',
+                      'Add More Tiles',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w500,

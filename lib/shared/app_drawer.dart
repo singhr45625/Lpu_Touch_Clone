@@ -58,7 +58,7 @@ class MyAppDrawer extends StatelessWidget {
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 2),
                     image: const DecorationImage(
-                      image: NetworkImage('https://static.vecteezy.com/system/resources/thumbnails/033/837/660/small/happy-school-pupil-asian-boy-in-glasses-on-isolated-on-studio-background-with-copy-space-back-to-school-ai-generative-photo.jpeg'),
+                      image: AssetImage(''),
                       fit: BoxFit.cover,
                     ),
                   ),
